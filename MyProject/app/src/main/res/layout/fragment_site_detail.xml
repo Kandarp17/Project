@@ -1,0 +1,379 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    tools:context="com.example.patel_000.myproject.SiteDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/plans"
+                android:id="@+id/iconplan"
+                android:clickable="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:background="@color/colorAccent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/pcty"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:clickable="true"
+                android:id="@+id/iconlocation"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/clipboard"
+                android:id="@+id/iconmore"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:clickable="true"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textColor="#c0c0c0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textColor="#c0c0c0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="More"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textColor="#c0c0c0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_height="80dp">
+
+            <TextView
+                android:text="Site Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:id="@+id/proname" />
+
+            <TextView
+                android:text="Site id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/text"
+                android:id="@+id/prosite"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/plans"
+            android:visibility="visible">
+            <TextView
+                android:text="Start Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:gravity="fill_vertical"
+                android:textSize="17dp"
+                android:textColor="#c0c0c0"
+                android:textStyle="bold"
+                android:id="@+id/labstartdate" />
+
+            <TextView
+                android:text="22 june 2013"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="fill_vertical"
+                android:textColor="@color/text"
+                android:id="@+id/laystartdate"
+                />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#4a5a71"></LinearLayout>
+
+            <TextView
+                android:text="End Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:gravity="fill_vertical"
+                android:textSize="17dp"
+                android:textColor="#c0c0c0"
+                android:textStyle="bold"
+                android:id="@+id/labenddate" />
+
+            <TextView
+                android:text=" 22 july 2019"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="fill_vertical"
+                android:textColor="@color/text"
+                android:id="@+id/layenddate"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#4a5a71"></LinearLayout>
+
+            <TextView
+                android:text="Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:gravity="fill_vertical"
+                android:textSize="17dp"
+                android:textColor="#c0c0c0"
+                android:textStyle="bold"
+                android:id="@+id/labstatus" />
+
+            <TextView
+                android:text="Active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="fill_vertical"
+                android:textColor="@color/text"
+                android:id="@+id/laystatus"/>
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#4a5a71"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/location"
+        android:visibility="gone">
+    <TextView
+        android:text="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:gravity="fill_vertical"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/labaddress"/>
+    <TextView
+        android:text="BITS Edu Campus,babaria institute of technology,  Vadodara-Mumbai National Highway 8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:gravity="fill_vertical"
+        android:textColor="@color/text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layaddress"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#4a5a71"></LinearLayout>
+
+
+
+    <TextView
+        android:text="Area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:gravity="fill_vertical"
+        android:textColor="#C0C0C0"
+        android:id="@+id/labarea"/>
+
+    <TextView
+        android:text="Varnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:gravity="fill_vertical"
+        android:textColor="@color/text"
+        android:id="@+id/layarea"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#4a5a71"></LinearLayout>
+
+
+
+    <TextView
+        android:text="City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:gravity="fill_vertical"
+        android:textColor="#C0C0C0"
+        android:id="@+id/labcity"/>
+    <TextView
+        android:text="Vadodara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="fill_vertical"
+        android:textColor="@color/text"
+        android:id="@+id/laycity"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#4a5a71"></LinearLayout>
+
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/more"
+            android:visibility="gone">
+
+
+
+
+
+            <TextView
+                android:text="Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="fill_vertical"
+                android:textColor="#C0C0C0"
+                android:id="@+id/labdetails"/>
+
+            <TextView
+                android:text="The details and introductory section focus on the issues of insulation continuity
+                (minimising cold bridging) and airtightness. They are not intended to provide any detailed
+                guidance on other performance aspects such as vapour control, ventilation,
+                 etc which must also be considered by the design and construction team."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:gravity="fill_vertical"
+                android:textColor="@color/text"
+                android:id="@+id/laydetails"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#4a5a71"></LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+    </ScrollView>

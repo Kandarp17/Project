@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.patel_000.myproject.StaffListFragment"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divider"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/listselector" />
+
+    </LinearLayout>
+

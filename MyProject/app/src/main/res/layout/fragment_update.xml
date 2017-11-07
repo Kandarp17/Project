@@ -1,0 +1,112 @@
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context="com.example.patel_000.myproject.UpdateFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_margin="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/percentage"
+                android:layout_gravity="center"
+                android:id="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/percentage"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000"
+                android:letterSpacing="0.1"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:textColorHint="#c0c0c0"
+                android:hint="% of Work Completed"
+                android:textColor="#c0c0c0"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="#4a5a71"></LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/feedback"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageView4" />
+
+            <EditText
+                android:id="@+id/feedback"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000"
+                android:letterSpacing="0.1"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColorHint="#c0c0c0"
+                android:hint="Feedback"
+                android:inputType="textMultiLine"
+                android:textColor="#c0c0c0"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="#4a5a71"></LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="100dp"
+            android:layout_margin="10dp"
+            android:textColor="#c0c0c0"
+            android:clickable="true"
+            android:text="Submit"
+            android:background="@color/colorAccent"
+            android:textSize="20dp"
+            android:id="@+id/btnsumbit"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </LinearLayout>

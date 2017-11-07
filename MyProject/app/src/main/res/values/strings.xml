@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="dropcat">select category</string>
+    <string name="dropres">select resource</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="url">http://192.168.0.100:3219</string>
+
+    <string name="slide_1_title">My Profile</string>
+    <string name="slide_1_desc">All your registered informationj just a click away!</string>
+
+    <string name="slide_2_title">My Site</string>
+    <string name="slide_2_desc">The easiest way to get everything related to your site!</string>
+
+    <string name="slide_3_title">Report Issues</string>
+    <string name="slide_3_desc">Report your issues and get them solved fast!</string>
+
+    <string name="slide_4_title">Book Resources</string>
+    <string name="slide_4_desc">Book Resources in advance and use time efficiently!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="title_activity_view_doc">ViewDocActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_staff_detail">StaffDetail</string>
+</resources>

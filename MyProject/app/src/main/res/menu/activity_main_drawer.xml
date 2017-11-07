@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item android:title="My Site">
+            <menu>
+                <item android:title=" Details"
+                      android:icon="@drawable/details"
+                      android:id="@+id/nav_sitedetails"/>
+                <item
+                    android:id="@+id/nav_sitedoc"
+                    android:icon="@drawable/document"
+                    android:title="Documents" />
+                <item
+                    android:id="@+id/nav_sitestaff"
+                    android:icon="@drawable/staff"
+                    android:title="Staff" />
+
+                <item
+                    android:id="@+id/nav_sitenewphoto"
+                    android:icon="@drawable/newphoto"
+                    android:title="New Photo" />
+                <item
+                    android:id="@+id/nav_sitenewupdate"
+                    android:icon="@drawable/new_update"
+                    android:title="New Update" />
+            </menu>
+        </item>
+
+    </group>
+    <group >
+        <item android:title="Issue" >
+            <menu>
+                <item android:title="New Issue"
+                    android:icon="@drawable/new_issues"
+                    android:id="@+id/nav_newissue"/>
+                <item android:id="@+id/nav_myissues"
+                    android:icon="@drawable/my_issues"
+                    android:title="My Issues" />
+            </menu>
+        </item>
+    </group>
+    <group >
+        <item android:title="Resource Booking" >
+            <menu>
+                <item android:title="New Booking"
+                    android:icon="@drawable/newbooking"
+                    android:id="@+id/nav_newbooking"/>
+                <item android:id="@+id/nav_mybookings"
+                    android:icon="@drawable/mybooking"
+                    android:title="My Bookings" />
+                <item android:id="@+id/nav_bookingoutstanding"
+                    android:icon="@drawable/mybooking"
+                    android:title="Outstanding Bookings" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_myprofile"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="My Details" />
+        </menu>
+    </item>
+
+</menu>

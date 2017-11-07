@@ -1,0 +1,149 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    tools:context="com.example.patel_000.myproject.MyProfileFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/elli"
+        android:gravity="center"
+        android:id="@+id/proimage"
+        android:layout_height="350dp">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="220dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/proname" />
+
+        <TextView
+            android:text="Site Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/prosite"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/pcall"
+            android:layout_margin="10dp"
+            android:id="@+id/proiconnumber" />
+
+        <TextView
+            android:text=" 9999999999"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:gravity="fill_vertical"
+            android:textColor="@color/text"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/pronumber"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/pemail"
+            android:id="@+id/proiconemailid" />
+
+        <TextView
+            android:text=" abc@mysite.com"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:gravity="fill_vertical"
+            android:textColor="@color/text"
+            android:id="@+id/proemailid"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/pcty"
+            android:id="@+id/proiconcity" />
+
+        <TextView
+            android:text=" CIty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:gravity="fill_vertical"
+            android:textColor="@color/text"
+            android:id="@+id/procity"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/pdepartment"
+            android:id="@+id/proicondepartment" />
+
+        <TextView
+            android:text=" Department"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/text"
+            android:gravity="fill_vertical"
+            android:id="@+id/prodepartment"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
