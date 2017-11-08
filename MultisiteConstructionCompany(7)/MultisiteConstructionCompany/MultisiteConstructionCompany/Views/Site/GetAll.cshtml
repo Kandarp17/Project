@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "GetAll";
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">All Sites<a href="/Site/SiteDetail/0" style="float:right;color:Highlight;">+ Add Site</a> </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <!--Table Wrapper Start-->
+                        <div class="table-responsive ls-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No.</th>
+                                        <th>Name</th>
+                                        <th>City</th>
+                                        <th>Phone</th>
+                                        <th>Progress</th>
+                                        <th>Profile</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 0; i < Model.Rows.Count; i++)
+                                    {
+
+                                        <tr>
+                                            <td>@Model.Rows[i]["SiteID"]</td>
+                                            <td>@Model.Rows[i]["Name"]</td>
+                                            <td>@Model.Rows[i]["City"]</td>
+                                            <td>@Model.Rows[i]["Phone"]</td>
+                                            <td><a href="/SitePhoto/SiteProgress/@Model.Rows[i]["SiteID"]">View Progress</a></td>
+                                            <td><a href="~/site/SiteInformation/@Model.Rows[i]["SiteID"]">View Profile</a></td>
+                                            <td><a href="/Site/SiteDetail/@Model.Rows[i]["SiteID"]">Update</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Table Wrapper Finish-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

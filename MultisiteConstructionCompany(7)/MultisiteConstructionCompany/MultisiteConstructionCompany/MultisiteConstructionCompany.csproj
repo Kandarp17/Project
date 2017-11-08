@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FDBA7E9-10B9-41F3-9E7F-5DA14D905009}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MultisiteConstructionCompany</RootNamespace>
+    <AssemblyName>MultisiteConstructionCompany</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccessController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IssueAPIController.cs" />
+    <Compile Include="Controllers\IssueController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewPhotoController.cs" />
+    <Compile Include="Controllers\ResBookingAPIController.cs" />
+    <Compile Include="Controllers\ResBookingController.cs" />
+    <Compile Include="Controllers\ResCategoryAPIController.cs" />
+    <Compile Include="Controllers\ResCategoryController.cs" />
+    <Compile Include="Controllers\ResourceController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
+    <Compile Include="Controllers\SiteDocumentAPIController.cs" />
+    <Compile Include="Controllers\SiteDocumentController.cs" />
+    <Compile Include="Controllers\SitePhotoAPIController.cs" />
+    <Compile Include="Controllers\SitePhotoController.cs" />
+    <Compile Include="Controllers\StaffAPIController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BookingInformation.cs" />
+    <Compile Include="Models\DataAccess.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Issue.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ResBooking.cs" />
+    <Compile Include="Models\ResCategory.cs" />
+    <Compile Include="Models\Resource.cs" />
+    <Compile Include="Models\Site.cs" />
+    <Compile Include="Models\SiteDocument.cs" />
+    <Compile Include="Models\SitePhoto.cs" />
+    <Compile Include="Models\SiteStaff.cs" />
+    <Compile Include="Models\SiteStatus.cs" />
+    <Compile Include="Models\SiteUpdate.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\CompanyDB.mdf" />
+    <Content Include="App_Data\CompanyDB_log.ldf">
+      <DependentUpon>CompanyDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="favicon.ico" />
+    <Content Include="resourcephoto\255DI-Yuvraj.jpg" />
+    <Content Include="resourcephoto\back hoe.jpg" />
+    <Content Include="resourcephoto\bull dozer.jpg" />
+    <Content Include="resourcephoto\clam2.jpg" />
+    <Content Include="resourcephoto\concretemixer.jpg" />
+    <Content Include="resourcephoto\dragline.jpg" />
+    <Content Include="resourcephoto\dumpers-250x250.jpg" />
+    <Content Include="resourcephoto\M01.1_Mobile_crane03.png" />
+    <Content Include="resourcephoto\powershovel.jpg" />
+    <Content Include="resourcephoto\rigid_dump_truck.jpg" />
+    <Content Include="resourcephoto\roller.jpg" />
+    <Content Include="resourcephoto\scraper.jpg" />
+    <Content Include="resourcephoto\trenching.jpg" />
+    <Content Include="site\JS65194792.jpg" />
+    <Content Include="site\site-modeling.jpg" />
+    <Content Include="site\site-modeling2.jpg" />
+    <Content Include="staffphotos\53991c2a42f1ee7ed7dcb9de9576aac4.jpg" />
+    <Content Include="staffphotos\Business_Man_00000.jpgfe071256-9609-4caa-8e56-491c3636a91aRes200.jpg" />
+    <Content Include="staffphotos\render_newriggedThumb01.jpg096ea3b4-1d53-41e8-9a54-185d9e17b607Res200.jpg" />
+    <Content Include="Template\Attc\attc.css" />
+    <Content Include="Template\Attc\attc.googleCharts.js" />
+    <Content Include="Template\Attc\AttcExample.htm" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Template\ajax.googleapis.com\ajax\libs\jqueryui\1.10.2\jquery-ui.min.js" />
+    <Content Include="Template\ajax.microsoft.com\ajax\jquery.templates\beta1\jquery.tmpl.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\bootstrap.min.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\font-awesome\fonts\fontawesome-webfont862f.svg" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\img\loading.html" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\accordion.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\jquery.amaran.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\all-themes.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\awesome.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\blur.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\default.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\metro.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\readmore.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\rounded.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\amaranjs\theme\user.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\arrow_asc.html" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\arrow_desc.html" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\bootstrap-magnify.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\bootstrap-progressbar-3.1.1.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\bootstrap-switch.min.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\bootstrapValidator.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\c3js\c3.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\calendario\fonts\fontawesome-selected.svg" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\calendario\ls-calendario.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\cropper.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\custom_smart_wizard.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\dndTable.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\drag_drop_image.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\easyTree.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\fileinput.min.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\fluidbox.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\fullcalendar\fullcalendar.print.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\humane_themes\bigbox.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\humane_themes\jackedup.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\humane_themes\libnotify.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\all.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\aero%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\aero.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\blue%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\blue.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\flat%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\flat.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\green%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\green.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\grey%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\grey.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\orange%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\orange.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\pink%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\pink.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\purple%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\purple.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\red%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\red.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\yellow%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\yellow.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\flat\_all.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\futurico\futurico%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\futurico\futurico.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\futurico\futurico.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\line\line%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\line\line.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\line\_all.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\aero%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\aero.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\blue%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\blue.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\green%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\green.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\grey%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\grey.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\minimal%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\minimal.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\orange%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\orange.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\pink%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\pink.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\purple%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\purple.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\red%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\red.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\yellow%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\yellow.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\minimal\_all.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\polaris\polaris%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\polaris\polaris.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\polaris\polaris.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\aero%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\aero.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\blue%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\blue.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\green%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\green.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\grey%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\grey.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\orange%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\orange.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\pink%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\pink.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\purple%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\purple.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\red%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\red.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\square%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\square.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\yellow%402x.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\yellow.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\icheck\skins\square\_all.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\jplayer.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\jquery-jvectormap.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\jquery.datetimepicker.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\jquery.minicolors.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\jquery.remodal.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\jquery.toolbars.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\ladda-themeless.min.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\lightGallery.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\pace.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\rangeSlider\ion.rangeSlider.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\rangeSlider\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\selectize.bootstrap3.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\shuffle.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\simpleWeather.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\summernote.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\tab.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\TimeCircles.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\tsort.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\validationEngine.jquery.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\weatherFeed.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\responsive.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\style.css" />
+    <Content Include="Template\fickle.aimmate.com\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\arrows.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\arrow_asc.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\arrow_desc.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\arrow_down.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\arrow_up.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\construction_helmet_arm.jpg" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\back_disabled.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\back_enabled.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\forward_disabled.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\forward_enabled.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\sort_asc.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\sort_asc_disabled.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\sort_both.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\sort_desc.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\datatable\sort_desc_disabled.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\120\1.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\120\2.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\120\3.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\120\4.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\120\5.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\120\7.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\book-table-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\camera-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\camera-lense-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\car-iphone-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\connector-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\diacelar-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\dj-mix-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\glass-mac-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\i-phone5s-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\iphone-diary-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\iphone-hand-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\lady-type-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\mac-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\gallery\mac-tea-460x290.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\icons\glyphicons_move.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\icons\glyphicons_pencil.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\ico\fab.ico" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\ico\fab3860.ico" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\ios\fickle-logo-114.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\ios\fickle-logo-72.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\link.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\loader.gif" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\loading.gif" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\media-player\jplayer.gif" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\media-player\jplayer.jpg" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\minicolor\jquery.minicolors.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\navigator.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\rangeslider\sprite-skin-flat.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\search-icon.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\coffe-1280.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\hotdog-1280.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\new-1280.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\nuts-1280.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\pestrycake-1280x800.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\piza-1280.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\snacks-1280-400.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\snacks-1280x800.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\slider\yummy-1280.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\avatar-115.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\avatar1-115.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\avatar1-80.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\avatar2-115.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\avatar2-80.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\avatar3-115.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\avatar3-80.png" />
+    <Content Include="Template\fickle.aimmate.com\assets\images\userimage\me.jpg" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootbox.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootstrap-magnify.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootstrap-progressbar.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootstrap-rating-input.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootstrap-switch.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootstrap-switch.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootstrap.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\bootstrapvalidator\bootstrapValidator.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\c3js\c3.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\c3js\d3.v3.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\chart\chartjs\Chart.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\chart\flot\jquery.flot.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\chart\flot\jquery.flot.pie.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\chart\flot\jquery.flot.resize.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\chart\jquery.sparkline.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\chart\morris.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\chart\raphael-min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\color.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\countUp.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\cropper.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\data.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\easyTree.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\editable-table\jquery.dataTables.editable.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\editable-table\jquery.dataTables.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\editable-table\jquery.jeditable.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\editable-table\jquery.validate.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\fileinput.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\fullcalendar.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\gallery\evenheights.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\gallery\page.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\gallery\prism.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\gallery\shuffle.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\humane.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\icheck.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\ion.rangeSlider.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery-image-upload.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery-sortable.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.amaran.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.autosize.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.calendario.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.circliful.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.datetimepicker.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.dragtable.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.easypiechart.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.fluidbox.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.gomap-1.3.2.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.knob.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.minicolors.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.nanoscroller.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.qrcode.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.remodal.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.simpleWeather.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.smartWizard.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.tablednd.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.toolbar.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jquery.zweatherfeed.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jvectormap\jquery-jvectormap-au-mill-en.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jvectormap\jquery-jvectormap-uk-mill-en.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jvectormap\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\jvectormap\mall-map.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\lib\jquery-1.11.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\lib\jquery-2.1.1.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\lib\jquery.easing.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\lib\jqueryui.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\lib\modernizr.custom.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\lib\modernizr.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\lightGallery.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\loader\ladda.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\loader\spin.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\markerclusterer.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\masonry.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\media-player\jplayer.playlist.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\media-player\jquery.jplayer.inspector.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\media-player\jquery.jplayer.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\multipleAccordion.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\notify.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pace.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\buttonSwitch.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\c3.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\calender.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\chartjs.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\checkboxRadio.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\comingSoon.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\composMail.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\dashboard.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.flotchart.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.gallery.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.magnify.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.morris.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.profile.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.sparkline.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.timeline.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\demo.treeView.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\dragAndDrop.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\editor.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\fontAwesome.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\formValidation.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\formWizard.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\glyphicons.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\googleMap.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\imageCrop.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\knobSlider.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\layout.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\lockScreen.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\login.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\mail.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\media.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\noteTask.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\notification.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\pickerTool.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\registration.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\sampleForm.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\selectTag.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\table.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\uiElements.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\vectorMap.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\pages\widget.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\qrcode.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\selectize.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\shine.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\skycons.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\slip.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\summernote.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\switchery.min.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\tabulous.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\TimeCircles.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\tsort.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\validationEngine\jquery.validationEngine.js" />
+    <Content Include="Template\fickle.aimmate.com\assets\js\validationEngine\languages\jquery.validationEngine-en.js" />
+    <Content Include="Template\hts-cache\new.lst" />
+    <Content Include="Template\hts-cache\new.txt" />
+    <Content Include="Template\hts-cache\readme.txt" />
+    <Content Include="updateimages\dc-Cover-89s7oe50e1os0248hf68pp4o82-20160530065742.Medi.jpeg" />
+    <Content Include="updateimages\download.jpg" />
+    <Content Include="updateimages\image007.jpg" />
+    <Content Include="updateimages\images.jpg" />
+    <Content Include="updateimages\site-modeling.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\font-awesome\fonts\fontawesome-webfont862f.eot" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\font-awesome\fonts\fontawesome-webfont862f.ttf" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\font-awesome\fonts\fontawesome-webfont862f.woff" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\calendario\fonts\fontawesome-selected.eot" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\calendario\fonts\fontawesome-selected.ttf" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\calendario\fonts\fontawesome-selected.woff" />
+    <Content Include="Template\fickle.aimmate.com\assets\css\plugins\calendario\fonts\fontawesome-selectedd41d.eot" />
+    <Content Include="Template\fickle.aimmate.com\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Template\fickle.aimmate.com\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Template\fickle.aimmate.com\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Template\fickle.aimmate.com\assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Template\fickle.aimmate.com\assets\fonts\Slide-icons.eot" />
+    <Content Include="Template\hts-cache\doit.log" />
+    <Content Include="Template\hts-cache\new.zip" />
+    <Content Include="Template\hts-cache\winprofile.ini" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Staff\StaffDetail.cshtml" />
+    <Content Include="Views\Staff\GetAll.cshtml" />
+    <Content Include="Views\Site\SiteDetail.cshtml" />
+    <Content Include="Views\Site\GetAll.cshtml" />
+    <Content Include="Views\SiteDocument\SiteDocumentDetail.cshtml" />
+    <Content Include="Views\Site\SiteInformation.cshtml" />
+    <Content Include="Views\ResCategory\InsertResCategory.cshtml" />
+    <Content Include="Views\ResCategory\GetAll.cshtml" />
+    <Content Include="Views\Resource\InsertResource.cshtml" />
+    <Content Include="Views\Resource\GetAll.cshtml" />
+    <Content Include="Views\Site\InactiveSites.cshtml" />
+    <Content Include="Views\SitePhoto\SiteProgress.cshtml" />
+    <Content Include="Views\ResBooking\ResBookingNew.cshtml" />
+    <Content Include="Views\ResBooking\GetBooking.cshtml" />
+    <Content Include="Views\Site\ActiveSites.cshtml" />
+    <Content Include="Views\Access\Login.cshtml" />
+    <Content Include="Views\Site\Dashboard.cshtml" />
+    <Content Include="Views\Staff\MyProfile.cshtml" />
+    <Content Include="Views\Issue\GetIssue.cshtml" />
+    <Content Include="Views\Issue\ReplyIssue.cshtml" />
+    <Content Include="sitedocuments\636215482041015001_2180703.pdf" />
+    <Content Include="sitedocuments\636247344506101095_2170701.pdf" />
+    <Content Include="Views\SiteDocument\SearchDocument.cshtml" />
+    <Content Include="Views\Staff\AllStaff.cshtml" />
+    <Content Include="Views\Site\SiteGallery.cshtml" />
+    <Content Include="Views\Resource\ResourceDetails.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\NewPhoto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3218</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3218/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

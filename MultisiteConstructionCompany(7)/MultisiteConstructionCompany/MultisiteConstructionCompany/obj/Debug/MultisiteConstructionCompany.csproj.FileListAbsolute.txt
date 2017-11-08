@@ -1,0 +1,150 @@
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\csc.exe
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\System.Collections.Immutable.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\vbc.exe
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\VBCSCompiler.exe
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\VBCSCompiler.exe.config
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\MultisiteConstructionCompany.dll.config
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\MultisiteConstructionCompany.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\MultisiteConstructionCompany.pdb
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Antlr3.Runtime.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.SqlServer.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Google.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Web.Infrastructure.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Newtonsoft.Json.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Owin.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Net.Http.Formatting.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Helpers.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.WebHost.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Mvc.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Optimization.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Razor.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Deployment.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Razor.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\WebGrease.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Helpers.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Mvc.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Optimization.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Razor.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Deployment.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Razor.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Antlr3.Runtime.pdb
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Newtonsoft.Json.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Net.Http.Formatting.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.WebHost.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.SqlServer.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Google.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\obj\Debug\MultisiteConstructionCompany.dll
+c:\users\bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\obj\Debug\MultisiteConstructionCompany.pdb
+C:\Users\Bhavik\documents\visual studio 2015\Projects\MultisiteConstructionCompany\MultisiteConstructionCompany\obj\Debug\MultisiteConstructionCompany.csprojResolveAssemblyReference.cache
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\csc.exe
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\vbc.exe
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\VBCSCompiler.exe
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\MultisiteConstructionCompany.dll.config
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\MultisiteConstructionCompany.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\MultisiteConstructionCompany.pdb
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Antlr3.Runtime.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.SqlServer.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Newtonsoft.Json.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Owin.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Net.Http.Formatting.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Helpers.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.WebHost.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Mvc.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Optimization.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Razor.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Deployment.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Razor.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\WebGrease.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Helpers.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Mvc.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Optimization.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Razor.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Deployment.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.WebPages.Razor.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Antlr3.Runtime.pdb
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Newtonsoft.Json.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Net.Http.Formatting.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\System.Web.Http.WebHost.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\EntityFramework.SqlServer.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\obj\Debug\MultisiteConstructionCompany.csprojResolveAssemblyReference.cache
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\obj\Debug\MultisiteConstructionCompany.dll
+C:\Users\patel_000\Desktop\Project\MultisiteConstructionCompany(7)\MultisiteConstructionCompany\MultisiteConstructionCompany\obj\Debug\MultisiteConstructionCompany.pdb

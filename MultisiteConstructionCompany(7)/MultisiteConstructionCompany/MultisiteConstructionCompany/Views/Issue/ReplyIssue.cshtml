@@ -1,0 +1,64 @@
+﻿@model MultisiteConstructionCompany.Models.Issue
+@using MultisiteConstructionCompany.Models
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "ReplyIssue";
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@Model.Title</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="click2edit">
+                                <p style="font-size:large"> @Model.Details</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Reply</h3>
+                    </div>
+                    @if (Model.Status == "Pending")
+                    {
+                    <form action="/Issue/ReplyIssue" method="post" style="margin:2px">
+                        <div class="panel-body no-padding">
+                            <div class="summernote">
+                                <textarea name="ReplyMsg" placeholder="Write your reply here...." style="border: 2px solid #a9c6c9;vertical-align: middle;padding: 9px;height: 129px;border-collapse: collapse;margin: 2px;padding: 2px;width: 13.35in;z-index: 1;font-family: calibri;"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="IssueID" value="@Model.IssueID"/>
+                        <button type="submit" value="Submit" style="background-color: #e7e7e7;border: none;margin-left:3px;color: black;padding: 12px 30px;text-align: center;display: inline-block;font-size: 12px;">Submit Reply</button>
+                    </form>
+                    }
+                    else
+                    {
+                        <div class="panel-body">
+                            <div class="click2edit">
+                                <p>@Model.ReplyMsg</p>
+                            </div>
+                        </div>
+                    }
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-heading">
+                        <a href="/Issue/GetIssue">&lt;&lt;Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

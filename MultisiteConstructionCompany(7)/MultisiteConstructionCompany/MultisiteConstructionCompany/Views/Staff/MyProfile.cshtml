@@ -1,0 +1,53 @@
+﻿@using MultisiteConstructionCompany.Models
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "MyProfile";
+}
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Top header start-->
+                <h3 class="ls-top-header">Profile</h3>
+                <!--Top header end -->
+            </div>
+        </div>
+        <!-- Main Content Element  Start-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row-filter">
+                    <!--User Details Start-->
+                    <div class="col-md-12 ls-gallery-paddingless-wrap">
+                        <!-- ls Gallery Container Start -->
+                        <div id="grid" class=" m-row shuffle--container shuffle--fluid">
+                            <!-- ls Gallery Item Start -->
+                            <div class="col-md-4 col-sm-4 col-xs-12 m-col-md-4 picture-item" data-groups='["project"]'
+                                 data-date-created="2010-09-14" data-title="Baseball">
+                                <div class="picture-item__inner">
+                                    <!-- Gallery Hover Wrap Start -->
+                                    <div class="ls-hover-block ls-three-column-icon ls-block-effect">
+
+                                        <img src="@(((Staff)Session["Staff"]).PhotoPath)" alt="image" style="float:left">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="">
+                        <h5>Name : @(((Staff)Session["Staff"]).Name)</h5>
+                         <h5>Email : @(((Staff)Session["Staff"]).Email)</h5>
+                        <h5>Mobile : @(((Staff)Session["Staff"]).Mobile)</h5>
+                        <h5>Department : @(((Staff)Session["Staff"]).Dept)</h5>
+                        <h5>City : @(((Staff)Session["Staff"]).City)</h5>
+                        <h5>StaffType : @(((Staff)Session["Staff"]).StaffType)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

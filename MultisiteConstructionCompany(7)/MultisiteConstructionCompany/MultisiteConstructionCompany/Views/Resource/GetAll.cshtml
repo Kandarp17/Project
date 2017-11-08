@@ -1,0 +1,79 @@
+﻿@using System.Data
+@using MultisiteConstructionCompany.Models
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "GetAll";
+    ResCategory r = new ResCategory();
+    DataTable dt = r.SelectAll();
+}
+<div id="main-content">
+    <div class="container-fluid">
+        <!-- Main Content Element  Start-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Resource</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="defaultForm" method="post" class="form-horizontal ls_form" action="/Resource/GetAll" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Resource Category</label>
+                                <div class="col-lg-6">
+                                    @Html.DropDownList("ResCategoryID", new SelectList(dt.DefaultView, "ResCategoryID", "Name"), "Select Resource Category", new { @class = "form-control" })
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                                @if (TempData["Message"] != null)
+                                {
+                                    <p style="margin-left:3.5in;color:red">@TempData["Message"]</p>
+                                }
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">All Resource</h3>
+                        </div>
+                        <div class="panel-body">
+                                <!--Table Wrapper Start-->
+                            <div class="table-responsive ls-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr No</th>
+                                            <th>Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for (int i = 1; i <= Model.Rows.Count; i++)
+                                        {
+                                            <tr>
+                                                <td>@i</td>
+                                                <td><a href="/Resource/ResourceDetails/@Model.Rows[i-1]["ResourceID"]">@Model.Rows[i-1]["Name"]</a></td>
+                                                <td><a href="/Resource/Delete/@Model.Rows[i-1]["ResourceID"]">Remove</a></td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                </table>
+                            </div>
+                                <!--Table Wrapper Finish-->
+                        </div>
+                   </div>
+              </div>             
+         </div>
+    </div>
+</div>
+@*//maula mere*@
+
+
+
+

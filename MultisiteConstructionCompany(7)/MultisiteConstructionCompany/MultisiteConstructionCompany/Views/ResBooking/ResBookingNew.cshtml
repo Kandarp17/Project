@@ -1,0 +1,91 @@
+﻿@using System.Data
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "ResBookingNew";
+    DataTable dt = ViewBag.cat;
+    DataTable dt1 = ViewBag.site;
+
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Top header start-->
+                <h3 class="ls-top-header">Details</h3>
+                <!--Top header end -->
+                <!--Top breadcrumb start -->
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#">Form Staffs</a></li>
+                    <li class="active">Staff Details</li>
+                </ol>
+                <!--Top breadcrumb start -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Staff Details</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form method="post" action="/ResBooking/BookResource" class="form-horizontal ls_form">
+                            @if(TempData["Error"] != null)
+                            {
+                                <p align="center" style="color:crimson">@TempData["Error"]</p>
+                            }
+                            
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Category</label>
+                                <div class="col-lg-6">
+                                    @Html.DropDownList("ResCategoryID", new SelectList(dt.DefaultView, "ResCategoryID", "Name"), "Select Category", new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Site</label>
+                                <div class="col-lg-6">
+                                    @Html.DropDownList("SiteID", new SelectList(dt1.DefaultView, "SiteID", "Name"), "Select Site", new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Quantity</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" name="Quantity" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">StaffID</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" name="StaffID" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Date</label>
+                                <div class="col-lg-6">
+                                    <input class="form-control datePickerOnly" type="text" name="RequiredDate"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Comments</label>
+                                <div class="col-lg-6">
+                                    <textarea class="form-control"
+                                              id="bio1" name="Comments"
+                                              placeholder="Any Comments"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-9 col-lg-offset-3">
+                                    <button type="submit" class="btn btn-primary">Book</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

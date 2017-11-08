@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <head>
+    <script type="text/javascript" src="//www.google.com/jsapi"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="attc.googleCharts.js"></script>
+	<link rel="stylesheet" type="text/css" href="attc.css">
+  </head>
+  <body>
+  	<div class="mainContent">
+    	<table 
+    		title="Attendance Percentages" 
+    		id="AttendancePercentages" 
+    		summary="pieDescription" 
+    		data-attc-createChart="true"
+    		data-attc-colDescription="pieDescription" 
+    		data-attc-colValues="pieValues" 
+    		data-attc-location="AttendancePercentagesPie" 
+    		data-attc-hideTable="true" 
+    		data-attc-type="pie"
+    		data-attc-googleOptions='{"is3D":true}'
+    		data-attc-controls='{"showHide":true,"create":true,"chartType":true}'
+    		>
+			<thead>
+				<tr>
+					<th id="pieDescription">Description</th>
+					<th id="pieValues">Sessions</th>
+					<th>%</th>
+					<th>Other</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Present</td>
+					<td>405</td>
+					<td>89</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>Missing</td>
+					<td>1</td>
+					<td>0</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Authorised Absent</td>
+					<td>36</td>
+					<td>7</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Unauthorised Absent</td>
+					<td>1</td>
+					<td>0</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Late</td>
+					<td>10</td>
+					<td>2</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="AttendancePercentagesPie"></div>
+		</div>
+  </body>
+</html>

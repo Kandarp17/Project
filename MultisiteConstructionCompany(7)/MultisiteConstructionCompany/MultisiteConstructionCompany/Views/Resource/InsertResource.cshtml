@@ -1,0 +1,68 @@
+﻿@using MultisiteConstructionCompany.Models
+@using System.Data
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "InsertResource";
+    ResCategory res = new ResCategory();
+    DataTable dt = res.SelectAll();
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <!-- Main Content Element  Start-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Insert Resource</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="defaultForm" method="post" class="form-horizontal ls_form" action="/Resource/Insert"
+                              data-bv-message="This value is not valid"
+                              data-bv-feedbackicons-valid="fa fa-check"
+                              data-bv-feedbackicons-invalid="fa fa-bug"
+                              data-bv-feedbackicons-validating="fa fa-refresh " enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Name</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" name="Name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Resource Category</label>
+                                <div class="col-lg-6">
+                                    @Html.DropDownList("ResCategoryID", new SelectList(dt.DefaultView, "ResCategoryID", "Name"), "Select Resource Category", new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Photo</label>
+                                <div class="col-lg-6">
+                                    <input type="file" name="PhotoPath" value="Browse" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Specification</label>
+                                <div class="col-lg-6">
+                                    <textarea class="form-control"
+                                              id="bio1" name="Specs"
+                                              placeholder="Write Specifications here"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-9 col-lg-offset-3">
+                                    <button type="submit" class="btn btn-primary">Add</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,105 @@
+﻿@using MultisiteConstructionCompany.Models
+@using System.Data
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "SiteProgress";
+    DataTable dt = ViewBag.dt;
+    DataTable dt1 = ViewBag.dt1;
+}
+<style>
+
+    .fulldesc{
+        overflow:hidden;
+        display:none;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        /*display: block;*/
+        width: 400px;
+        margin-bottom: 10px;
+        background:#f2f2f2;
+        color: #000;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .fulldesc.toggled{
+        -webkit-transform: translate3d(0, -120px, 0);
+        -moz-transform: translate3d(0, -120px, 0);
+        -ms-transform: translate3d(0, -120px, 0);
+        -o-transform: translate3d(0, -120px, 0);
+        transform: translate3d(0, -120px, 0);
+    }
+    .desc{
+        padding-left:5px;
+        padding-right:5px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+            $(document).ready(function () {
+                $(".desc").click(function () {
+                    $(this).nextAll(".fulldesc").slideToggle("toggled");
+                });
+            });
+</script>
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Top header start-->
+                <h3 class="ls-top-header">@Model.Name</h3>
+            </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row filter">
+                    <div class="col-md-12 ls-gallery-paddingless-wrap">
+
+                        <div class="row">
+                            <div class="col-md-12 ls-gallery-paddingless-wrap">
+                                <!-- ls Gallery Container Start -->
+                                <div id="grid" class="m-row shuffle--container shuffle--fluid">
+                                    <!-- ls Gallery Item Start -->
+                                    @for (int i = 0; i < dt.Rows.Count; i++)
+                                    {
+                                        <div class="col-md-3 col-sm-4 col-xs-12 m-col-md-3 picture-item" data-groups='["project"]'
+                                             data-date-created="2010-09-14" data-title="Baseball">
+                                            <div class="picture-item__inner">
+                                                <!-- Gallery Hover Wrap Start -->
+                                                <div class="ls-hover-block ls-block-effect">
+                                                    <!-- Image Path Start -->
+                                                    <img src="@dt.Rows[i]["PhotoPath"]" alt="image">
+
+                                                </div>
+                                                <!-- Gallery Hover Wrap Finish -->
+                                                <!-- Gallery Title & Tag Wrap Start -->
+                                                <center><a href="http://maps.google.com/maps?@dt.Rows[i]["Latitude"],@dt.Rows[i]["Longitude"]"><img src="~/Template/fickle.aimmate.com/assets/images/1491331663_location.png" style="width:22px;height:22px;padding-top:2px;"></a></center>
+                                                <div class="desc">
+                                                    <p class="picture-item__tags pull-left" style="color:royalblue">Description</p>
+                                                 
+                                                    <p class="picture-item__tags pull-right">@Convert.ToDateTime(dt.Rows[i]["CreateDate"]).ToString("dd-MM-yyyy")</p>
+
+                                                </div>
+                                                <div class="fulldesc">
+                                                    <p style="font-size:small">@dt.Rows[i]["Feedback"]</p>
+                                                </div>
+
+
+                                                <!-- Gallery Title & Tag Wrap Finish -->
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

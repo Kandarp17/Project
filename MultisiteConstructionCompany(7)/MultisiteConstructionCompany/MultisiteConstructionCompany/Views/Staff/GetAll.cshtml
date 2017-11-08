@@ -1,0 +1,84 @@
+﻿@using MultisiteConstructionCompany.Models
+@using System.Data
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "GetAll";
+    Site s = new Site();
+    DataTable dt = s.SelectAll();
+    DataTable dt1 = ViewBag.Add;
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <!-- Main Content Element  Start-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Site Details</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="defaultForm" method="post" class="form-horizontal ls_form" action="/Staff/GetAll" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Search Resource by Site</label>
+                                <div class="col-lg-6">
+                                    @Html.DropDownList("SiteID", new SelectList(dt.DefaultView, "SiteID", "Name"), "Select Site to Search", new { @class = "form-control" })
+                                </div>
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+
+                            @if (TempData["Message"] != null)
+                            {
+                                <p style="margin-left:3.5in;color:red">@TempData["Message"]</p>
+                            }
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Staff Table<a href="/Staff/StaffDetail/0" style="float:right;color:Highlight;">+ Add Staff</a> </h3>
+                            </div>
+
+                            <div class="panel-body">
+                                <!--Table Wrapper Start-->
+                                <div class="table-responsive ls-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr No.</th>
+                                                <th>Name</th>
+                                                <th>Mobile</th>
+                                                <th>StaffType</th>
+                                                <th>Site Name</th>
+                                                <th>Update</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @for (int i = 1; i <= dt1.Rows.Count; i++)
+                                            {
+                                                <tr>
+                                                    <td>@i</td>
+                                                    <td>@dt1.Rows[i-1]["Name"]</td>
+                                                    <td>@dt1.Rows[i-1]["Mobile"]</td>
+                                                    <td>@dt1.Rows[i-1]["StaffType"]</td>
+                                                    <td>@dt1.Rows[i-1]["SName"]</td>
+                                                    <td><a href="/Staff/StaffDetail/@dt1.Rows[i-1]["StaffID"]">Update</a></td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Table Wrapper Finish-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+

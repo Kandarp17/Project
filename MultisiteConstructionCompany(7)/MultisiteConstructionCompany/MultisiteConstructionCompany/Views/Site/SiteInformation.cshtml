@@ -1,0 +1,139 @@
+﻿@model MultisiteConstructionCompany.Models.Site
+@using System.Data
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "SiteInformation";
+    DataTable dt = ViewBag.staff;
+    DataTable dt1 = ViewBag.moreStaff;
+    DataTable dt2 = ViewBag.getDocument;
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <!-- Main Content Element  Start-->
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <!--User Details Start-->
+                <div class="ls-user-details">
+                    <div class="row">
+                        
+                            <!--User Name-->
+                            <div>
+                                <p font-family="sans-serif" style="text-align:center;font-size:26px;">@Model.Name</p>
+                            </div>
+                        
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="@Model.PhotoPath" style="width:13.35in; height:3in;margin:0px 13px 17px 17px"/>
+                    </div>
+                    <div class="row" style="margin-left:17px">
+                        <div class="col-md-6" align="center">
+                            <h4>Location</h4>
+                            <address>
+                                @Model.Address,<br/>
+                                @Model.Area,<br />
+                                @Model.City.<br />
+                                Contact No: @Model.Phone
+                            </address>
+                        </div>
+                        <div class="col-md-6" align="center">
+                            <h4>Details</h4>
+                            <address>
+                                Status: @Model.Status<br />
+                                Start Date: @Convert.ToDateTime(Model.StartDate).ToString("dd-MM-yyyy")<br />
+                                End Date: @Convert.ToDateTime(Model.EndDate).ToString("dd-MM-yyyy")
+                            </address>
+                        </div>
+                    </div>
+
+                </div>
+                <!--User Details Finish-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Documents<span style="float:right"><a href="/SiteDocument/SiteDocumentDetail">+Add</a></span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <!--Table Wrapper Start-->
+                        <div class="table-responsive ls-table">
+                            <table class="table table-bordered table-bottomless" id="ls-row">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Document Name</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int j = 1; j <= dt2.Rows.Count; j++)
+                                    {
+                                        <tr>
+                                            <td>@j</td>
+                                            <td><a href="@dt2.Rows[j-1]["DocumentPath"]">@dt2.Rows[j-1]["DocumentName"]</a></td>
+                                            <td>@dt2.Rows[j-1]["Status"]</td>
+                                            <td><a href="/SiteDocument/RemoveDocument/@dt2.Rows[j-1]["SiteDocumentID"]">Remove</a></td>
+                                        </tr>
+                                    }
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Table Wrapper Finish-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Staff</h3>
+                    </div>
+                    <div class="panel-body">
+                        <!--Table Wrapper Start-->
+                        <div class="table-responsive ls-table">
+                            <table class="table table-bordered sar-table table-bottomless" id="ls-column">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Name</th>
+                                        <th>Mobile</th>
+                                        <th>Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for(int i = 1; i <= dt.Rows.Count; i++)
+                                    {
+                                        <tr>
+                                            <td>@i</td>
+                                            <td>@dt.Rows[i-1]["Name"]</td>
+                                            <td>@dt.Rows[i-1]["Mobile"]</td>
+                                            <td>@dt.Rows[i-1]["StaffType"]</td>
+                                        </tr>
+                                    }
+                                    <tr>
+                                        <form method="post" action="/Staff/UpdateSiteID/">
+                                            <td><input type="hidden" value="@Model.SiteID" name="SiteID"/></td>
+                                            <td colspan="2">
+                                                @Html.DropDownList("StaffID", new SelectList(dt1.DefaultView, "StaffID", "Name"), "Add Staff", new { @class = "form-control" })
+                                            </td>
+                                            <td><input type="submit" value="Add" style="height:35px;width:100px"/></td>
+                                        </form>    
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Table Wrapper Finish-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

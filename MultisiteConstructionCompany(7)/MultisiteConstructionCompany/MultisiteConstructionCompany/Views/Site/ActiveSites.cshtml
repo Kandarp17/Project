@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "ActiveSites";
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <!--Table Wrapper Start-->
+                        <div class="table-responsive ls-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No</th>
+                                        <th>Name</th>
+                                        <th>City</th>
+                                        <th>Phone</th>
+                                        <th>Manager</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 1; i <= Model.Rows.Count; i++)
+                                    {
+                                        <tr>
+                                            <td>@i</td>
+                                            <td><a href="/Site/SiteInformation/@Model.Rows[i-1]["SiteID"]">@Model.Rows[i-1]["Name"]</a></td>
+                                            <td>@Model.Rows[i-1]["City"]</td>
+                                            <td>@Model.Rows[i-1]["Phone"]</td>
+                                            <td>@Model.Rows[i-1]["SName"]</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Table Wrapper Finish-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

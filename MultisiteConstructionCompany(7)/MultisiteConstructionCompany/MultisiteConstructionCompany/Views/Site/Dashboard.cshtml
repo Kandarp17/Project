@@ -1,0 +1,52 @@
+﻿@using MultisiteConstructionCompany.Models
+@using System.Data
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Dashboard";
+    DataTable[] Tables = ViewBag.Tables;
+    DataTable dt = ViewBag.Add;
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        @for (int j = 0; j < Tables.Length; j++)
+        {
+        <!-- Main Content Element  Start-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mainContent">
+                        <table title="Attendance Percentages"
+                               id="AttendancePercentages"
+                               summary="pieDescription"
+                               data-attc-createChart="true"
+                               data-attc-colDescription="pieDescription"
+                               data-attc-colValues="pieValues"
+                               data-attc-location='@("AttendancePercentagesPie" + j)'
+                               data-attc-hideTable="true"
+                               data-attc-type="line"
+                               data-attc-googleOptions='{"is3D":true}'
+                               data-attc-controls='{"showHide":false,"create":false,"chartType":false}'>
+                            <thead>
+                                <tr>
+                                    <th id="pieDescription">Date</th>
+                                    <th id="pieValues">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < Tables[j].Rows.Count; i++)
+                                {
+                                    <tr>
+                                        <td>@Convert.ToDateTime(Tables[j].Rows[i]["CreateDate"]).ToString("dd-MM-yyyy")</td>
+                                        <td>@Tables[j].Rows[i]["Percentage"]</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <h3 class="ls-top-header">@Tables[j].Rows[0]["Name"]</h3>  
+                        <div id='@("AttendancePercentagesPie" + j)'></div>
+                        </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

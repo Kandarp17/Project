@@ -1,0 +1,182 @@
+﻿@using MultisiteConstructionCompany.Models
+@using System.Data
+@{ 
+    ViewBag.Title = "SiteDocumentDetail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    Site s = new Site();
+    DataTable dt = s.SelectAll();
+}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!-- Mirrored from fickle.aimmate.com/sample-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Apr 2016 12:08:20 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Viewport metatags -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- iOS webapp metatags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- iOS webapp icons -->
+    <link rel="apple-touch-icon-precomposed" href="~/Template/assets/images/ios/fickle-logo-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Template/assets/images/ios/fickle-logo-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Template/assets/images/ios/fickle-logo-114.png" />
+    <!-- TODO: Add a favicon -->
+    <link rel="shortcut icon" href="~/Template/assets/images/ico/fab.ico">
+    <title>Fickle - Sample Form</title>
+    <!--Page loading plugin Start -->
+    <link rel="stylesheet" href="~/Template/assets/css/plugins/pace.css">
+    <script src="~/Template/assets/js/pace.min.js"></script>
+    <!--Page loading plugin End   -->
+    <!-- Plugin Css Put Here -->
+    <link href="~/Template/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Template/assets/css/plugins/fileinput.min.css">
+    <!-- Plugin Css End -->
+    <!-- Custom styles Style -->
+    <link href="~/Template/assets/css/style.css" rel="stylesheet">
+    <!-- Custom styles Style End-->
+    <!-- Responsive Style For-->
+    <link href="~/Template/assets/css/responsive.css" rel="stylesheet">
+    <!-- Responsive Style For-->
+    <!-- Custom styles for this template -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    <!--Navigation Top Bar Start-->
+    
+    <!--Navigation Top Bar End-->
+ 
+            <div id="main-content">
+                <div class="container-fluid">
+                    <!-- Main Content Element  Start-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Site Document</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form action="/SiteDocument/Insert" method="post" class="form-horizontal ls_form ls_form_horizontal" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Document Name</label>
+                                            <div class="col-lg-10">
+                                                <input type="text" placeholder="Document Name" name="DocumentName" class="form-control">                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Document Upload</label>
+                                            <div class="col-md-10 ls-group-input">
+                                                <input type="file" name="DocumentPath" value="Browse" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-lg-2 control-label">Status</label>
+                                            <div class="col-lg-10">
+                                                <input type="text" placeholder="Status" name="Status" class="form-control">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Site</label>
+                                            <div class="col-md-10 ls-group-input">
+                                                @Html.DropDownList("SiteID",new SelectList(dt.DefaultView,"SiteID","Name"),"Select Site",new { @class="form-control"})
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-lg-offset-2 col-lg-10">
+                                                <button class="btn btn-sm btn-default" type="submit">Upload</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                    <!-- Main Content Element  End-->
+                </div>
+            </div>
+
+        
+        <!--Page main section end -->
+        <!--Right hidden  section start-->
+        <section id="right-wrapper">
+            <!--Right hidden  section close icon start-->
+            <div class="close-right-wrapper">
+                <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+            </div>
+            <!--Right hidden  section close icon end-->
+            <!--Tab navigation start-->
+            <ul class="nav nav-tabs" id="setting-tab">
+                <li class="active"><a href="#chatTab" data-toggle="tab"><i class="fa fa-comment-o"></i> Chat</a></li>
+                <li><a href="#settingTab" data-toggle="tab"><i class="fa fa-cogs"></i> Setting</a></li>
+            </ul>
+            <!--Tab navigation end -->
+            <!--Tab content start-->
+            
+            <!--Tab content -->
+        </section>
+        <!--Right hidden  section end -->
+        <div id="change-color">
+            <div id="change-color-control">
+                <a href="javascript:void(0)"><i class="fa fa-magic"></i></a>
+            </div>
+            <div class="change-color-box">
+                <ul>
+                    <li class="default active"></li>
+                    <li class="red-color"></li>
+                    <li class="blue-color"></li>
+                    <li class="light-green-color"></li>
+                    <li class="black-color"></li>
+                    <li class="deep-blue-color"></li>
+                </ul>
+            </div>
+        </div>
+  
+    <!--Layout Script start -->
+    <script type="text/javascript" src="~/Template/assets/js/color.js"></script>
+    <script type="text/javascript" src="~/Template/assets/js/lib/jquery-1.11.min.js"></script>
+    <script type="text/javascript" src="~/Template/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Template/assets/js/multipleAccordion.js"></script>
+    <!--easing Library Script Start -->
+    <script src="~/Template/assets/js/lib/jquery.easing.js"></script>
+    <!--easing Library Script End -->
+    <!--Nano Scroll Script Start -->
+    <script src="~/Template/assets/js/jquery.nanoscroller.min.js"></script>
+    <!--Nano Scroll Script End -->
+    <!--switchery Script Start -->
+    <script src="~/Template/assets/js/switchery.min.js"></script>
+    <!--switchery Script End -->
+    <!--bootstrap switch Button Script Start-->
+    <script src="~/Template/assets/js/bootstrap-switch.js"></script>
+    <!--bootstrap switch Button Script End-->
+    <!--easypie Library Script Start -->
+    <script src="~/Template/assets/js/jquery.easypiechart.min.js"></script>
+    <!--easypie Library Script Start -->
+    <!--bootstrap-progressbar Library script Start-->
+    <script src="~/Template/assets/js/bootstrap-progressbar.min.js"></script>
+    <!--bootstrap-progressbar Library script End-->
+    <script type="text/javascript" src="~/Template/assets/js/pages/layout.js"></script>
+    <!--Layout Script End -->
+    <!--Upload button Script Start-->
+    <script src="~/Template/assets/js/fileinput.min.js"></script>
+    <!--Upload button Script End-->
+    <!--Auto resize  text area Script Start-->
+    <script src="~/Template/assets/js/jquery.autosize.js"></script>
+    <!--Auto resize  text area Script Start-->
+    <script src="~/Template/assets/js/pages/sampleForm.js"></script>
+</body>
+<!-- Mirrored from fickle.aimmate.com/sample-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Apr 2016 12:08:23 GMT -->
+</html>

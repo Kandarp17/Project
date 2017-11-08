@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "SiteGallery";
+}
+
+<div id="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Top header start-->
+                <h3 class="ls-top-header">Site Gallery</h3>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row filter">
+                <div class="col-md-12 ls-gallery-paddingless-wrap">
+
+                    <div class="row">
+                        <div class="col-md-12 ls-gallery-paddingless-wrap">
+                            <!-- ls Gallery Container Start -->
+                            <div id="grid" class="m-row shuffle--container shuffle--fluid">
+                                <!-- ls Gallery Item Start -->
+                                @for (int i = 0; i < Model.Rows.Count; i++)
+                                {
+                                    <div class="col-md-3 col-sm-4 col-xs-12 m-col-md-3 picture-item" data-groups='["project"]'
+                                         data-date-created="2010-09-14" data-title="Baseball">
+                                        <div class="picture-item__inner">
+                                            <!-- Gallery Hover Wrap Start -->
+                                            <div class="ls-hover-block ls-block-effect">
+                                                <!-- Image Path Start -->
+                                                <a href="~/SitePhoto/SiteProgress/@Model.Rows[i]["SiteID"]"><img src="@Model.Rows[i]["PhotoPath"]" alt="image"></a>
+
+                                            </div>
+                                            <!-- Gallery Hover Wrap Finish -->
+                                            <!-- Gallery Title & Tag Wrap Start -->
+
+                                            <div class="picture-item__details clearfix">
+                                                <p class="picture-item__tags pull-left">@Model.Rows[i]["Name"]</p>
+                                                <p class="picture-item__tags pull-right">@Model.Rows[i]["Status"]</p>
+
+                                            </div>
+
+                                            <!-- Gallery Title & Tag Wrap Finish -->
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
